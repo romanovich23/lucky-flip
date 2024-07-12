@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.20;
 
-import "forge-std/Test.sol";
+import {Test} from "forge-std/Test.sol";
 
-import "src/Contract.sol";
+import {FlipToken} from "src/FlipToken.sol";
 
-contract TestContract is Test {
-    Contract c;
+contract TestFlipToken is Test {
+    FlipToken ft;
 
     function setUp() public {
-        c = new Contract();
+        ft = new FlipToken();
     }
 
     function testBar() public {
