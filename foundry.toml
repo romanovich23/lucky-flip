@@ -1,2 +1,5 @@
 [profile.ci.fuzz]
 runs = 10_000
+
+[dependencies]
+"@openzeppelin-contracts" = "5.0.2"
