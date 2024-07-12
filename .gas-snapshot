@@ -1,2 +1,1 @@
-TestFlipToken:testBar() (gas: 401)
-TestFlipToken:testFoo(uint256) (runs: 256, μ: 3425, ~: 3425)
+TestFlipTokenRegisterPlayer:test_balanceWhenRegisterPlayerIsCalled() (gas: 57292)
