@@ -1,39 +1,43 @@
-# <h1 align="center"> Forge Template </h1>
+# Lucky Flip
 
-**Template repository for getting started quickly with Foundry projects**
+![Rust][rust-badge] [![License: MIT][license-badge]][license]
 
-![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
+Lucky Flip is a simple betting game built on Ethereum using smart contracts developed with Foundry.
 
-## Getting Started
+[rust-badge]: https://img.shields.io/badge/Built%20with%20-Rust-e43716.svg
+[license]: https://opensource.org/licenses/MIT
+[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 
-Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
+## 📋 Requirements
 
-Or, if your repo already exists, run:
+To use this project, the following requirements are necessary:
+
+- [**Rust**][rust] programming language
+- [**Foundry**][foundry] framework
+- [**Soldeer**][soldeer] package manager
+
+[rust]: https://www.rust-lang.org/tools/install
+[foundry]: https://book.getfoundry.sh/getting-started/installation
+[soldeer]: https://github.com/mario-eth/soldeer
+
+## 📝 How to Build
+
+To build the smart contracts, follow these steps:
+
 ```sh
-forge init
+# Clone the repository
+git clone https://github.com/romanovich23/lucky-flip
+
+# Navigate to the project directory
+cd lucky-flip
+
+# Install dependencies
+soldeer install
+
+# Compile smart contracts
 forge build
-forge test
 ```
 
-## Writing your first test
+## 🤝 Contributions
 
-All you need is to `import forge-std/Test.sol` and then inherit it from your test contract. Forge-std's Test contract comes with a pre-instatiated [cheatcodes environment](https://book.getfoundry.sh/cheatcodes/), the `vm`. It also has support for [ds-test](https://book.getfoundry.sh/reference/ds-test.html)-style logs and assertions. Finally, it supports Hardhat's [console.log](https://github.com/brockelmore/forge-std/blob/master/src/console.sol). The logging functionalities require `-vvvv`.
-
-```solidity
-pragma solidity 0.8.10;
-
-import "forge-std/Test.sol";
-
-contract ContractTest is Test {
-    function testExample() public {
-        vm.roll(100);
-        console.log(1);
-        emit log("hi");
-        assertTrue(true);
-    }
-}
-```
-
-## Development
-
-This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+We appreciate your support and look forward to making our game even better with your help!
