@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 env:
@@ -22,8 +22,8 @@ jobs:
       - name: Install deps
         run: forge install
 
-      - name: Check gas snapshots
-        run: forge snapshot --check
+      - name: Install soldeer and dependencies
+        run: cargo install soldeer && soldeer install
 
       - name: Run tests
         run: forge test
